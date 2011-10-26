@@ -1,4 +1,5 @@
 \documentclass[a4paper,onesided,12pt]{report}
+\special{papersize=210mm,297mm}
 \usepackage{styles/fbe_tez}
 \usepackage[utf8x]{inputenc} % To use Unicode (e.g. Turkish) characters
 \renewcommand{\labelenumi}{(\roman{enumi})}
@@ -12,10 +13,15 @@
 
 \usepackage{multirow}
 \usepackage{subfigure}
+%% The following two packages may not be standard. I had to install
+%% texlive-science in a debian environment. -onurgu.
 \usepackage{algorithm}
 \usepackage{algorithmic}
 %\pagestyle{empty}
 %\includeonly{introduction} % To only process the given file
+
+% onurgu-
+\usepackage{lipsum}
 
 \newtheorem{thm}{Theorem}[chapter]
 \newtheorem{prop}[thm]{Proposition}
@@ -24,7 +30,7 @@
 % COVER PAGE
 \title{THESIS TITLE}
 \turkcebaslik{TEZ BAŞLIĞI}
-\degree{B.S, in  Your Program, Boğaziçi University, 2006}
+\degree{B.S., Your Program, Boğaziçi University, 2006}
 \author{Name Surname}
 \program{Your Program}
 \subyear{2011}
@@ -86,7 +92,23 @@ Bir sayfa uzunluğunda özet gelecektir.
 \chapter{INTRODUCTION}
 \label{chapter:introduction}
 \pagenumbering{arabic}
-Start with an introduction...
+Start with an introduction\footnote{Example.}.
+
+\lipsum[1]
+
+\lipsum[2]
+
+\lipsum[3]
+
+\lipsum[4]
+
+\lipsum[5]
+
+\lipsum[6]
+
+\lipsum[7]
+
+\lipsum[8]
 
 %\include{experiments_results}
 \chapter{EXPERIMENTS AND RESULTS}
@@ -106,16 +128,15 @@ Cosine.}
 \label{fig:sample}
 \end{figure}
 
-Now, let us cite some studies: one source as \cite{doebelin},  two
+Now, let us cite some studies: one source as \cite{doebelin}, two
 sources as \cite{doebelin,exoplanetwebsite} or you may cite three or
-more sources as 
+more sources as
 \cite{doebelin,exoplanetwebsite,aran2007databaseofnon-manual}.\nocite{
-liudissertation} \nocite{paper-IAT-2006-labels}
-Observe that they are ordered in the references chapter in the same
-order as
-they are cited. Let us put a sample table as seen in Table
-\ref{table:sample}. Please pay attention that the caption is followed
-by a period.
+  liudissertation} \nocite{paper-IAT-2006-labels} Observe that they
+are ordered in the references chapter in the same order as they are
+cited. \cite{Sevtsuk,Crandall2010,Hubbell,Blythe2007,Whigham2006,Puleo,Lieberman2005,Lorenzo}
+Let us put a sample table as seen in Table \ref{table:sample}. Please
+pay attention that the caption is followed by a period.
 
 \begin{table}[thbp]
 \vskip\baselineskip 
@@ -129,8 +150,6 @@ by a period.
 \label{table:sample}
 \end{center}
 \end{table}
-
-
 
 Footnotes should be avoided as possible. If there is an absolute
 necessity, footnotes should be used as this.\footnote{Example of a
@@ -268,6 +287,6 @@ here.
 The appendices start here.
 %\cite{*}
 \bibliographystyle{styles/fbe_tez_v11}
-\bibliography{references}
+\bibliography{references,samplereferences}
 
 \end{document}

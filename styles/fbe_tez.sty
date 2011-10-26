@@ -695,17 +695,47 @@ Science and Engineering \\
 %
 % Page style
 %
-\hoffset=0mm
-\oddsidemargin=9.6mm
-\evensidemargin=9.6mm
-\voffset=-5.4mm
-\topmargin=0mm
-\headsep =15mm
-%\headheight=20pt
-\footskip=0mm
-\paperheight=296mm
+% \hoffset=0mm
+% \oddsidemargin=9.6mm
+% \evensidemargin=9.6mm
+% \voffset=-5.4mm
+% \topmargin=0mm
+% \headsep =15mm
+% %\headheight=20pt
+% \footskip=0mm
+% \paperheight=297mm
+% \textwidth=155mm
+% \textheight=241mm
+% \parindent=1cm
+% \pagestyle{myheadings}
+
+% 1 inch = 2.54 cm
+
+% this must be 3.5 cm, and hoffset is always added 1in so we set oddsidemargin to 0.96
+% cm
+\hoffset=-1in % (1)
+% this must be 2.0 cm, and voffset is always added 1in so we set it to -5.4mm
+\voffset=-1in % (2)
+
+\oddsidemargin=35mm % (3)
+\evensidemargin=35mm % (3)b
+
+\topmargin=15mm % (4)
+
+\headheight=20pt % (5)
+\headsep=12mm % (6)
+
+\textheight=242mm % (7)
 \textwidth=155mm
-\textheight=241mm
+
+\marginparsep=0mm  % (9)
+\marginparwidth=0mm % (10)
+
+\footskip=10mm % (11)
+
+\paperwidth=210mm
+\paperheight=297mm
+
 \parindent=1cm
 \pagestyle{myheadings}
 %
