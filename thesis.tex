@@ -1,7 +1,7 @@
 \documentclass[a4paper,onesided,12pt]{report}
 \special{papersize=210mm,297mm}
 \usepackage{styles/fbe_tez}
-\usepackage[utf8x]{inputenc} % To use Unicode (e.g. Turkish) characters
+\usepackage[utf8]{inputenc} % To use Unicode (e.g. Turkish) characters
 \renewcommand{\labelenumi}{(\roman{enumi})}
 \usepackage{amsmath, amsthm, amssymb}
  % Some extra symbols
@@ -55,7 +55,7 @@
 Acknowledgements come here...
 \end{acknowledgements}
 \begin{abstract}
-One page abstract will come here.  
+One page abstract will come here.
 \end{abstract}
 \begin{ozet}
 Bir sayfa uzunluğunda özet gelecektir.
@@ -114,10 +114,10 @@ Start with an introduction\footnote{Example.}.
 \chapter{EXPERIMENTS AND RESULTS}
 \label{chapter:experiments-and-results}
 
-Experiments and results come here... 
+Experiments and results come here...
 \section{Sample Section}
  Always place some text after headings before putting a graphics into
-a section as seen in Figure \ref{fig:sample}. 
+a section as seen in Figure \ref{fig:sample}.
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.5\columnwidth]{sample_figure.png}
@@ -139,7 +139,7 @@ Let us put a sample table as seen in Table \ref{table:sample}. Please
 pay attention that the caption is followed by a period.
 
 \begin{table}[thbp]
-\vskip\baselineskip 
+\vskip\baselineskip
 \caption[Sample table]{Sample table.}
 \begin{center}
 \begin{tabular}{|c|c|c|}\hline
@@ -164,7 +164,7 @@ Item lists may be represented as follows:
 \end{enumerate}
 \item Another item.
 \end{itemize}
-%  \item 
+%  \item
 % \end{enumerate}
 Item lists may also be represented as follows:
 \begin{enumerate}
@@ -189,11 +189,11 @@ We use the method of completing the square to rewrite $ax^2+bx+c$.
 ax^2+bx+c&=a\left( x^2 + \frac{b}{a}x+\right)+c \\
   &=a\left( x^2 + \frac{b}{a}x+ \left(\frac{b}{2a}\right)^2
      -\left(\frac{b}{2a}\right)^2 +\right)+c \\
-  &=a\left( x+\frac{b}{2a}\right)^2 - 
+  &=a\left( x+\frac{b}{2a}\right)^2 -
 a\left(\frac{b}{2a}\right)^2+c\\
   &= a\left( x+\frac{b}{2a}\right)^2- \frac{b^2-4ac}{4a}.
 \end{align*}
-Therefore $ax^2+bx+c=0$ can be rewritten as 
+Therefore $ax^2+bx+c=0$ can be rewritten as
 $$
 a\left( x+\frac{b}{2a}\right)^2- \frac{b^2-4ac}{4a}=0,
 $$
@@ -222,7 +222,7 @@ sample equations.
 \begin{algorithmic}
 \STATE
 \STATE \textbf{Require}  $\mathbf{s_i},\ i=1,2,\dots,N$ are normalized
- 
+
 \STATE Compute the mean  $\mathbf{\bar{s}}$ using Eq. \ref{eq:mean};
 \STATE Form the $N\times2L$ matrix $\mathbf{Q}$ as defined in Eq.
 \ref{eq:q};
@@ -249,18 +249,18 @@ Analysis Algorithm.}
 % \vskip
 \end{figure}
 
-\begin{align} 
+\begin{align}
 \mathbf{\bar{s}} & =\frac{1}{N} \sum_{i=1}^N \mathbf{s}_i
-\label{eq:mean}   
+\label{eq:mean}
 \\
-\mathbf{Q} & =\left[ 
-\begin{array}{cccc} 
+\mathbf{Q} & =\left[
+\begin{array}{cccc}
  \mathbf{s}_1  - \mathbf{\bar{s}} & \mathbf{s}_2 - \mathbf{\bar{s}} &
 \cdots & \mathbf{s}_N  - \mathbf{\bar{s}}
 \end{array}
 \right]_{2L\times N }
 \label{eq:q}
-\\ 
+\\
 \mathbf{C}_s & =\frac{1}{N} \mathbf{Q}^T \mathbf{Q}
 \label{eq:cov_matrix}
 \end{align}
@@ -278,7 +278,7 @@ Some text here too.
 \label{chapter:conclusion}
 
 The conclusions of the thesis should come
-here.
+here. \cite{minka94, acar11}
 % \nocite{NewEntry1,NewEntry2,NewEntry3,NewEntry4,NewEntry5,
 % NewEntry6,
 % NewEntry7,NewEntry8,NewEntry9,NewEntry10,NewEntry11,NewEntry12}

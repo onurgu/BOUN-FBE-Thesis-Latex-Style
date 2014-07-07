@@ -1,0 +1,50 @@
+New readme file
+
+Versions:
+
+(direnaj)onur@fbe-portege:~/Desktop/projects/boun/fbe/thesis-style/fbe_thesis$ pdflatex --version
+pdfTeX 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian)
+kpathsea version 6.1.1
+Copyright 2013 Peter Breitenlohner (eTeX)/Han The Thanh (pdfTeX).
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the pdfTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the pdfTeX source.
+Primary author of pdfTeX: Peter Breitenlohner (eTeX)/Han The Thanh (pdfTeX).
+Compiled with libpng 1.2.49; using libpng 1.2.49
+Compiled with zlib 1.2.8; using zlib 1.2.8
+Compiled with poppler version 0.24.1
+
+
+(direnaj)onur@fbe-portege:~/Desktop/projects/boun/fbe/thesis-style/fbe_thesis$ bibtex --version
+BibTeX 0.99d (TeX Live 2013/Debian)
+kpathsea version 6.1.1
+Copyright 2013 Oren Patashnik.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the BibTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the BibTeX source.
+Primary author of BibTeX: Oren Patashnik.
+
+PACKAGES
+
+utf8
+amsmath, amsthm, amssymb
+
+bottom
+
+cite
+
+graphicx
+
+longtable
+
+multirow
+subfigure
+
+algorithm
+algorithmic
+
+lipsum
